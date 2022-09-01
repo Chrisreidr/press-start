@@ -15,9 +15,9 @@
     <section>
         <form class="newGame">
             <div class="addGameTitle">
-                <img class="logo" src="images/console.png">
+                <img class="logo" src="/images/console.png">
                 <h2 class="addGame">Add a game</h2>
-                <img class="logo" src="images/game-controller.png">
+                <img class="logo" src="/images/game-controller.png">
             </div>
             
             <div class="inputsContainer">
@@ -26,7 +26,23 @@
                     <input type="text" class="inputWidth" id="game-title" name="gameTitle" placeholder="Enter game title here..." required>
                 </div>
                 <div class="inputs">
-                    <label class="inputTitles" for="chooseConsole">Choose Console</label>
+                    <label class="inputGenre" for="chooseGenre">Genre</label>
+                    <select class="inputWidth" id="choose-genre" name="chooseGenre" required>
+                        <option value="rpg">RPG</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="action">Action</option>
+                        <option value="fighting">Fighting</option>
+                        <option value="sports">Sports</option>
+                        <option value="racing">Racing</option>
+                        <option value="strategy">Strategy</option>
+                        <option value="puzzle">Puzzle</option>
+                        <option value="shooter">Shooter</option>
+                        <option value="simulation">Simulation</option>
+                        <option value="survival">Survival</option>
+                    </select>
+                </div>
+                <div class="inputs">
+                    <label class="inputTitles" for="chooseConsole">Console</label>
                     <select class="inputWidth" id="choose-console" name="chooseConsole" required>
                         <option value="pc">PC</option>
                         <option value="playstation">Playstation</option>
